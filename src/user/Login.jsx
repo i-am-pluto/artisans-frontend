@@ -18,7 +18,7 @@ function Login() {
     e.preventDefault();
     console.log("here");
     const response = await fetch(
-      "https://artisans-and-co.onrender.com:5000" + "/api/user/login",
+      "https://artisans-and-co.onrender.com" + "/api/user/login",
       {
         method: "POST",
         mode: "cors",

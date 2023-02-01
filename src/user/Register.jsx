@@ -26,7 +26,7 @@ function Register() {
     };
     console.log(JSON.stringify(obj));
     const respone = await fetch(
-      "https://artisans-and-co.onrender.com:5000" + "/api/user/register",
+      "https://artisans-and-co.onrender.com" + "/api/user/register",
       {
         method: "POST",
         mode: "cors",

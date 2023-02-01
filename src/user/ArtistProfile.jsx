@@ -14,7 +14,7 @@ function ArtistProfile({ user }) {
   const { id } = useParams();
   console.log(id);
   useEffect(() => {
-    fetch("https://artisans-and-co.onrender.com:5000" + "/api/artist/" + id, {
+    fetch("https://artisans-and-co.onrender.com" + "/api/artist/" + id, {
       method: "GET",
       mode: "cors",
       headers: {

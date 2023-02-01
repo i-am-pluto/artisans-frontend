@@ -25,7 +25,7 @@ export const Varients = () => {
     };
     console.log(body);
     const response = await fetch(
-      `https://artisans-and-co.onrender.com:5000/api/product/${id}/addvarients`,
+      `https://artisans-and-co.onrender.com/api/product/${id}/addvarients`,
       {
         method: "POST",
         mode: "cors",

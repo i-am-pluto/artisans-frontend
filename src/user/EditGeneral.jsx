@@ -7,7 +7,7 @@ const EditGeneral = ({ profile_user }) => {
   const handleSubmit = async (e) => {
     const body = address;
     const response = await fetch(
-      "https://artisans-and-co.onrender.com:5000" +
+      "https://artisans-and-co.onrender.com" +
         "api/user/" +
         profile_user.id +
         "/editaddress",

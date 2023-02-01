@@ -35,7 +35,7 @@ function App() {
   let [user, setUser] = useState({});
   useEffect(() => {
     document.body.style = "background: #f1faee;";
-    fetch("https://artisans-and-co.onrender.com:5000", {
+    fetch("https://artisans-and-co.onrender.com", {
       method: "GET",
       mode: "cors",
       headers: {

@@ -67,7 +67,7 @@ const AddCategories = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch(
-      `https://artisans-and-co.onrender.com:5000/api/product/${id}/addcategories`,
+      `https://artisans-and-co.onrender.com/api/product/${id}/addcategories`,
       {
         method: "POST",
         mode: "cors",
@@ -170,7 +170,7 @@ const AddCategories = () => {
                 return;
               }
               const response = await fetch(
-                "https://artisans-and-co.onrender.com:5000/api/category?" +
+                "https://artisans-and-co.onrender.com/api/category?" +
                   new URLSearchParams({
                     category: words,
                   }),

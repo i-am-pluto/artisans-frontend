@@ -11,7 +11,7 @@ const CustomerProfile = ({ user }) => {
   console.log(id);
 
   useEffect(() => {
-    fetch("https://artisans-and-co.onrender.com:5000" + "/api/customer/" + id, {
+    fetch("https://artisans-and-co.onrender.com" + "/api/customer/" + id, {
       method: "GET",
       mode: "cors",
       headers: {
