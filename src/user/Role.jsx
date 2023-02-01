@@ -11,7 +11,7 @@ function Role() {
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
-        "https://artisans-and-co.onrender.com" + "/api/user/",
+        "https://artisans-and-co.onrender.com:5000" + "/api/user/",
         {
           method: "GET",
           mode: "cors",
@@ -56,7 +56,7 @@ function Role() {
                 className="btn btn-success"
                 onClick={async (e) => {
                   const response = await fetch(
-                    "https://artisans-and-co.onrender.com" +
+                    "https://artisans-and-co.onrender.com:5000" +
                       "/api/user/" +
                       id +
                       "/markuserartist",
@@ -105,7 +105,7 @@ function Role() {
                 className="btn btn-success"
                 onClick={async (e) => {
                   const response = await fetch(
-                    "https://artisans-and-co.onrender.com" +
+                    "https://artisans-and-co.onrender.com:5000" +
                       "/api/user/" +
                       id +
                       "/markusercustomer",

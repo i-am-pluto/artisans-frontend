@@ -9,7 +9,7 @@ function CustomerReviews({ product_id }) {
   const getProductReviews = async () => {
     console.log(product_id);
     const response = await fetch(
-      `https://artisans-and-co.onrender.com/api/reviews/${product_id}/${loadMoreCounter}`,
+      `https://artisans-and-co.onrender.com:5000/api/reviews/${product_id}/${loadMoreCounter}`,
       {
         method: "GET",
         mode: "cors",
@@ -45,7 +45,7 @@ function CustomerReviews({ product_id }) {
       const comment = e.target.value;
 
       const response = await fetch(
-        `https://artisans-and-co.onrender.com/api/reviews/${product_id}/add`,
+        `https://artisans-and-co.onrender.com:5000/api/reviews/${product_id}/add`,
         {
           method: "POST",
           mode: "cors",
@@ -76,7 +76,7 @@ function CustomerReviews({ product_id }) {
     if (document.getElementById(but_id).innerText === "upvote?") {
       // send upvote request
       const response = await fetch(
-        `https://artisans-and-co.onrender.com/api/reviews/${review_id}/upvote`,
+        `https://artisans-and-co.onrender.com:5000/api/reviews/${review_id}/upvote`,
         {
           method: "PUT",
           mode: "cors",
@@ -100,7 +100,7 @@ function CustomerReviews({ product_id }) {
     } else {
       // send dowvote request
       const response = await fetch(
-        `https://artisans-and-co.onrender.com/api/reviews/${review_id}/downvote`,
+        `https://artisans-and-co.onrender.com:5000/api/reviews/${review_id}/downvote`,
         {
           method: "PUT",
           mode: "cors",

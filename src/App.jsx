@@ -31,12 +31,11 @@ import SearchResult from "./searchResult/SearchResult";
 import AddCategories from "./Seller/AddCategories";
 import OrderStatus from "./orders/OrderStatus";
 
-
 function App() {
   let [user, setUser] = useState({});
   useEffect(() => {
     document.body.style = "background: #f1faee;";
-    fetch("https://artisans-and-co.onrender.com", {
+    fetch("https://artisans-and-co.onrender.com:5000", {
       method: "GET",
       mode: "cors",
       headers: {

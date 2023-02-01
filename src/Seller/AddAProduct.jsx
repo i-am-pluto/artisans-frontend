@@ -276,7 +276,7 @@ function AddAProduct() {
       return val;
     });
     const response = await fetch(
-      "https://artisans-and-co.onrender.com" + `/api/product/${id}/add`,
+      "https://artisans-and-co.onrender.com:5000" + `/api/product/${id}/add`,
       {
         method: "POST",
         mode: "cors",
@@ -300,7 +300,7 @@ function AddAProduct() {
 
   const handleMainImageSubmit = async (mainImage) => {
     const response = await fetch(
-      `https://artisans-and-co.onrender.com/api/product/${productId}/addmainimage`,
+      `https://artisans-and-co.onrender.com:5000/api/product/${productId}/addmainimage`,
       {
         method: "POST",
         mode: "cors",
@@ -319,7 +319,7 @@ function AddAProduct() {
     for (var i = 0; i < giftImages.length; i++) {
       if (!giftImages[i].length) continue;
       const response = await fetch(
-        `https://artisans-and-co.onrender.com/api/product/${productId}/addgiftimage`,
+        `https://artisans-and-co.onrender.com:5000/api/product/${productId}/addgiftimage`,
         {
           method: "POST",
           mode: "cors",
@@ -423,7 +423,7 @@ function AddAProduct() {
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
-        `https://artisans-and-co.onrender.com/api/artist/${id}/artistcard`,
+        `https://artisans-and-co.onrender.com:5000/api/artist/${id}/artistcard`,
         {
           method: "GET",
           mode: "cors",

@@ -93,7 +93,7 @@ function SearchBar({ width }) {
                   return;
                 }
                 const response = await fetch(
-                  "https://artisans-and-co.onrender.com/api/search/lookup?" +
+                  "https://artisans-and-co.onrender.com:5000/api/search/lookup?" +
                     new URLSearchParams({
                       term: words,
                     }),
@@ -166,7 +166,7 @@ function SearchBar({ width }) {
                   return;
                 }
                 const response = await fetch(
-                  "https://artisans-and-co.onrender.com/api/search/lookup?" +
+                  "https://artisans-and-co.onrender.com:5000/api/search/lookup?" +
                     new URLSearchParams({
                       term: words,
                     }),

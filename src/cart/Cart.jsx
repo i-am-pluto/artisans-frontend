@@ -17,7 +17,7 @@ function Cart() {
 
   const getProductData = async () => {
     const response = await fetch(
-      `https://artisans-and-co.onrender.com/api/cart/${cart_id}`,
+      `https://artisans-and-co.onrender.com:5000/api/cart/${cart_id}`,
       {
         method: "GET",
         mode: "cors",
@@ -38,7 +38,7 @@ function Cart() {
     const cart_item_id = products[Number(e.target.id.substring(10))]._id;
     console.log(cart_item_id);
     const response = await fetch(
-      `https://artisans-and-co.onrender.com/api/cart/${cart_id}/delete`,
+      `https://artisans-and-co.onrender.com:5000/api/cart/${cart_id}/delete`,
       {
         method: "POST",
         mode: "cors",
@@ -68,7 +68,7 @@ function Cart() {
     e.preventDefault();
 
     const response = await fetch(
-      `https://artisans-and-co.onrender.com/api/order/${cart_id}/order-cart`,
+      `https://artisans-and-co.onrender.com:5000/api/order/${cart_id}/order-cart`,
       {
         method: "POST",
         mode: "cors",

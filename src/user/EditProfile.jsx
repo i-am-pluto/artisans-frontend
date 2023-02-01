@@ -38,7 +38,7 @@ export const EditProfile = ({ profile_user }) => {
     }
 
     const response = await fetch(
-      "https://artisans-and-co.onrender.com" +
+      "https://artisans-and-co.onrender.com:5000" +
         `/api/user/${profile_user.id}/edit`,
       {
         method: "PUT",
@@ -57,7 +57,7 @@ export const EditProfile = ({ profile_user }) => {
     // console.log(pfp);
     if (pfp) {
       const responsePfp = await fetch(
-        "https://artisans-and-co.onrender.com" +
+        "https://artisans-and-co.onrender.com:5000" +
           `/api/user/${profile_user.id}/setprofilepic`,
         {
           method: "POST",

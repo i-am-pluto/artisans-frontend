@@ -52,7 +52,7 @@ function ProductCard({ product, varients }) {
     };
 
     const response = await fetch(
-      `https://artisans-and-co.onrender.com/api/order/create`,
+      `https://artisans-and-co.onrender.com:5000/api/order/create`,
       {
         method: "POST",
         mode: "cors",
@@ -98,7 +98,7 @@ function ProductCard({ product, varients }) {
     };
 
     const response = await fetch(
-      `https://artisans-and-co.onrender.com/api/cart/add`,
+      `https://artisans-and-co.onrender.com:5000/api/cart/add`,
       {
         method: "POST",
         mode: "cors",

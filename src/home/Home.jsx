@@ -15,17 +15,8 @@ function Home({ user }) {
 
   const getHomePage = async () => {
     const [r1, r2, r3, r4] = [
-      await fetch("https://artisans-and-co.onrender.com/api/product/featured", {
-        method: "GET",
-        mode: "cors",
-        headers: {
-          "Access-Control-Allow-Credentials": "true",
-          "Content-Type": "application/json",
-        },
-        credentials: "include",
-      }),
       await fetch(
-        "https://artisans-and-co.onrender.com/api/product/bestselling",
+        "https://artisans-and-co.onrender.com:5000/api/product/featured",
         {
           method: "GET",
           mode: "cors",
@@ -36,7 +27,19 @@ function Home({ user }) {
           credentials: "include",
         }
       ),
-      await fetch("https://artisans-and-co.onrender.com/api/product/new", {
+      await fetch(
+        "https://artisans-and-co.onrender.com:5000/api/product/bestselling",
+        {
+          method: "GET",
+          mode: "cors",
+          headers: {
+            "Access-Control-Allow-Credentials": "true",
+            "Content-Type": "application/json",
+          },
+          credentials: "include",
+        }
+      ),
+      await fetch("https://artisans-and-co.onrender.com:5000/api/product/new", {
         method: "GET",
         mode: "cors",
         headers: {
@@ -45,15 +48,18 @@ function Home({ user }) {
         },
         credentials: "include",
       }),
-      await fetch("https://artisans-and-co.onrender.com/api/product/popular", {
-        method: "GET",
-        mode: "cors",
-        headers: {
-          "Access-Control-Allow-Credentials": "true",
-          "Content-Type": "application/json",
-        },
-        credentials: "include",
-      }),
+      await fetch(
+        "https://artisans-and-co.onrender.com:5000/api/product/popular",
+        {
+          method: "GET",
+          mode: "cors",
+          headers: {
+            "Access-Control-Allow-Credentials": "true",
+            "Content-Type": "application/json",
+          },
+          credentials: "include",
+        }
+      ),
     ];
     const data = [
       await r1.json(),
