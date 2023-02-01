@@ -36,7 +36,7 @@ function Header({ user }) {
   useEffect(() => {
     const fetchCart = async () => {
       const response = await fetch(
-        "https://artisans-and-co.onrender.com:5000/api/cart/",
+        "https://artisans-and-co.onrender.com/api/cart/",
         {
           method: "GET",
           mode: "cors",
@@ -103,7 +103,7 @@ function Header({ user }) {
           className="row"
           onClick={async (e) => {
             const response = await fetch(
-              "https://artisans-and-co.onrender.com:5000/api/user/" +
+              "https://artisans-and-co.onrender.com/api/user/" +
                 user._id +
                 "/markuserartist",
               {
@@ -147,7 +147,7 @@ function Header({ user }) {
           className="row"
           onClick={async (e) => {
             const response = await fetch(
-              "https://artisans-and-co.onrender.com:5000/api/user/" +
+              "https://artisans-and-co.onrender.com/api/user/" +
                 user._id +
                 "/markuserartist",
               {
@@ -184,7 +184,7 @@ function Header({ user }) {
           className="row"
           onClick={async (e) => {
             const response = await fetch(
-              "https://artisans-and-co.onrender.com:5000/api/user/logout",
+              "https://artisans-and-co.onrender.com/api/user/logout",
               {
                 method: "GET",
                 mode: "cors",

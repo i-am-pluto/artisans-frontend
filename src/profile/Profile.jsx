@@ -105,7 +105,7 @@ function Profile() {
     // status if the user is followed or not
 
     const response = await fetch(
-      `https://artisans-and-co.onrender.com:5000/api/artist/${profileId}/profile`,
+      `https://artisans-and-co.onrender.com/api/artist/${profileId}/profile`,
       {
         method: "GET",
         mode: "cors",

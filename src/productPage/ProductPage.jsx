@@ -20,7 +20,7 @@ function ProductPage() {
     document.body.style = "background: #f1faee;";
     const getProduct = async () => {
       const response = await fetch(
-        `https://artisans-and-co.onrender.com:5000/api/product/${productId}/`,
+        `https://artisans-and-co.onrender.com/api/product/${productId}/`,
         {
           method: "GET",
           mode: "cors",
@@ -44,7 +44,7 @@ function ProductPage() {
       let data = {};
       if (product.artist) {
         const response = await fetch(
-          `https://artisans-and-co.onrender.com:5000/api/artist/${product.artist.artist_id}/artistcard`,
+          `https://artisans-and-co.onrender.com/api/artist/${product.artist.artist_id}/artistcard`,
           {
             method: "GET",
             mode: "cors",
@@ -61,7 +61,7 @@ function ProductPage() {
     };
     const getVarients = async () => {
       const response = await fetch(
-        `https://artisans-and-co.onrender.com:5000/api/product/${productId}/varients`,
+        `https://artisans-and-co.onrender.com/api/product/${productId}/varients`,
         {
           method: "GET",
           mode: "cors",

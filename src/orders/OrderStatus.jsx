@@ -11,7 +11,7 @@ const ActionButton = ({ order }) => {
     if (!order.order_item) return;
 
     const response = await fetch(
-      `https://artisans-and-co.onrender.com:5000/api/artist/${order.a_id}`,
+      `https://artisans-and-co.onrender.com/api/artist/${order.a_id}`,
       {
         method: "GET",
         mode: "cors",
@@ -44,7 +44,7 @@ const ActionButton = ({ order }) => {
           style={{ width: "30%" }}
           onClick={async (e) => {
             const response = await fetch(
-              `https://artisans-and-co.onrender.com:5000/api/order/${order._id}/markorderdispatched`,
+              `https://artisans-and-co.onrender.com/api/order/${order._id}/markorderdispatched`,
               {
                 method: "PUT",
                 mode: "cors",
@@ -71,7 +71,7 @@ const ActionButton = ({ order }) => {
           style={{ width: "30%" }}
           onClick={async (e) => {
             const response = await fetch(
-              `https://artisans-and-co.onrender.com:5000/api/order/${order._id}/markorderdelivered`,
+              `https://artisans-and-co.onrender.com/api/order/${order._id}/markorderdelivered`,
               {
                 method: "PUT",
                 mode: "cors",
@@ -138,7 +138,7 @@ const OrderDetails = ({ order }) => {
     if (!order.order_item) return;
 
     const response = await fetch(
-      `https://artisans-and-co.onrender.com:5000/api/product/${order.order_item.product_id}`,
+      `https://artisans-and-co.onrender.com/api/product/${order.order_item.product_id}`,
       {
         method: "GET",
         mode: "cors",
@@ -168,7 +168,7 @@ const OrderDetails = ({ order }) => {
 
   const getVarient = async () => {
     const response = await fetch(
-      `https://artisans-and-co.onrender.com:5000/api/product/varient/${order.order_item.varient_id}`,
+      `https://artisans-and-co.onrender.com/api/product/varient/${order.order_item.varient_id}`,
       {
         method: "GET",
         mode: "cors",
@@ -259,7 +259,7 @@ const OrderStatus = () => {
   const [order, setOrder] = useState({});
   const fetchOrder = async () => {
     const response = await fetch(
-      `https://artisans-and-co.onrender.com:5000/api/order/${id}`,
+      `https://artisans-and-co.onrender.com/api/order/${id}`,
       {
         method: "GET",
         mode: "cors",

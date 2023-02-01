@@ -43310,7 +43310,7 @@
                                           return (
                                             (e.next = 6),
                                             fetch(
-                                              "https://artisans-and-co.onrender.com:5000/api/search/lookup?" +
+                                              "https://artisans-and-co.onrender.com/api/search/lookup?" +
                                                 new URLSearchParams({
                                                   term: n,
                                                 }),
@@ -43432,7 +43432,7 @@
                                           return (
                                             (e.next = 6),
                                             fetch(
-                                              "https://artisans-and-co.onrender.com:5000/api/search/lookup?" +
+                                              "https://artisans-and-co.onrender.com/api/search/lookup?" +
                                                 new URLSearchParams({
                                                   term: n,
                                                 }),
@@ -43555,7 +43555,7 @@
                           return (
                             (e.next = 2),
                             fetch(
-                              "https://artisans-and-co.onrender.com:5000/api/cart/",
+                              "https://artisans-and-co.onrender.com/api/cart/",
                               {
                                 method: "GET",
                                 mode: "cors",
@@ -43641,7 +43641,7 @@
                                   return (
                                     (e.next = 2),
                                     fetch(
-                                      "https://artisans-and-co.onrender.com:5000/api/user/" +
+                                      "https://artisans-and-co.onrender.com/api/user/" +
                                         r._id +
                                         "/markuserartist",
                                       {
@@ -43710,7 +43710,7 @@
                                   return (
                                     (e.next = 2),
                                     fetch(
-                                      "https://artisans-and-co.onrender.com:5000/api/user/" +
+                                      "https://artisans-and-co.onrender.com/api/user/" +
                                         r._id +
                                         "/markuserartist",
                                       {
@@ -43770,7 +43770,7 @@
                                 return (
                                   (e.next = 2),
                                   fetch(
-                                    "https://artisans-and-co.onrender.com:5000/api/user/logout",
+                                    "https://artisans-and-co.onrender.com/api/user/logout",
                                     {
                                       method: "GET",
                                       mode: "cors",
@@ -44261,7 +44261,7 @@
                       return (
                         (e.next = 2),
                         fetch(
-                          "https://artisans-and-co.onrender.com:5000/api/artist/bestselling",
+                          "https://artisans-and-co.onrender.com/api/artist/bestselling",
                           {
                             method: "GET",
                             mode: "cors",
@@ -44616,7 +44616,7 @@
                         return (
                           (e.next = 2),
                           fetch(
-                            "https://artisans-and-co.onrender.com:5000/api/product/featured",
+                            "https://artisans-and-co.onrender.com/api/product/featured",
                             {
                               method: "GET",
                               mode: "cors",
@@ -44633,7 +44633,7 @@
                           (t = e.sent),
                           (e.next = 5),
                           fetch(
-                            "https://artisans-and-co.onrender.com:5000/api/product/bestselling",
+                            "https://artisans-and-co.onrender.com/api/product/bestselling",
                             {
                               method: "GET",
                               mode: "cors",
@@ -44650,7 +44650,7 @@
                           (n = e.sent),
                           (e.next = 8),
                           fetch(
-                            "https://artisans-and-co.onrender.com:5000/api/product/new",
+                            "https://artisans-and-co.onrender.com/api/product/new",
                             {
                               method: "GET",
                               mode: "cors",
@@ -44667,7 +44667,7 @@
                           (r = e.sent),
                           (e.next = 11),
                           fetch(
-                            "https://artisans-and-co.onrender.com:5000/api/product/popular",
+                            "https://artisans-and-co.onrender.com/api/product/popular",
                             {
                               method: "GET",
                               mode: "cors",
@@ -44960,7 +44960,7 @@
                           console.log(n),
                           (e.next = 3),
                           fetch(
-                            "https://artisans-and-co.onrender.com:5000/api/reviews/"
+                            "https://artisans-and-co.onrender.com/api/reviews/"
                               .concat(n, "/")
                               .concat(l),
                             {
@@ -45021,7 +45021,7 @@
                           (r = t.target.value),
                           (e.next = 4),
                           fetch(
-                            "https://artisans-and-co.onrender.com:5000/api/reviews/".concat(
+                            "https://artisans-and-co.onrender.com/api/reviews/".concat(
                               n,
                               "/add"
                             ),
@@ -45083,7 +45083,7 @@
                         return (
                           (e.next = 6),
                           fetch(
-                            "https://artisans-and-co.onrender.com:5000/api/reviews/".concat(
+                            "https://artisans-and-co.onrender.com/api/reviews/".concat(
                               o,
                               "/upvote"
                             ),
@@ -45116,7 +45116,7 @@
                         return (
                           (e.next = 19),
                           fetch(
-                            "https://artisans-and-co.onrender.com:5000/api/reviews/".concat(
+                            "https://artisans-and-co.onrender.com/api/reviews/".concat(
                               o,
                               "/downvote"
                             ),
@@ -45377,7 +45377,7 @@
                           }),
                           (e.next = 8),
                           fetch(
-                            "https://artisans-and-co.onrender.com:5000/api/order/create",
+                            "https://artisans-and-co.onrender.com/api/order/create",
                             {
                               method: "POST",
                               mode: "cors",
@@ -45444,7 +45444,7 @@
                           }),
                           (e.next = 12),
                           fetch(
-                            "https://artisans-and-co.onrender.com:5000/api/cart/add",
+                            "https://artisans-and-co.onrender.com/api/cart/add",
                             {
                               method: "POST",
                               mode: "cors",
@@ -45723,7 +45723,7 @@
                           return (
                             (e.next = 2),
                             fetch(
-                              "https://artisans-and-co.onrender.com:5000/api/product/".concat(
+                              "https://artisans-and-co.onrender.com/api/product/".concat(
                                 c,
                                 "/"
                               ),
@@ -45772,7 +45772,7 @@
                               return (
                                 (e.next = 4),
                                 fetch(
-                                  "https://artisans-and-co.onrender.com:5000/api/artist/".concat(
+                                  "https://artisans-and-co.onrender.com/api/artist/".concat(
                                     n.artist.artist_id,
                                     "/artistcard"
                                   ),
@@ -45816,7 +45816,7 @@
                               return (
                                 (e.next = 2),
                                 fetch(
-                                  "https://artisans-and-co.onrender.com:5000/api/product/".concat(
+                                  "https://artisans-and-co.onrender.com/api/product/".concat(
                                     c,
                                     "/varients"
                                   ),
@@ -46028,7 +46028,7 @@
                         return (
                           (e.next = 2),
                           fetch(
-                            "https://artisans-and-co.onrender.com:5000/api/artist/".concat(
+                            "https://artisans-and-co.onrender.com/api/artist/".concat(
                               d,
                               "/profile"
                             ),
@@ -46179,7 +46179,7 @@
                         return (
                           (e.next = 2),
                           fetch(
-                            "https://artisans-and-co.onrender.com:5000/api/cart/".concat(
+                            "https://artisans-and-co.onrender.com/api/cart/".concat(
                               u
                             ),
                             {
@@ -46222,7 +46222,7 @@
                           console.log(n),
                           (e.next = 5),
                           fetch(
-                            "https://artisans-and-co.onrender.com:5000/api/cart/".concat(
+                            "https://artisans-and-co.onrender.com/api/cart/".concat(
                               u,
                               "/delete"
                             ),
@@ -46276,7 +46276,7 @@
                           n.preventDefault(),
                           (e.next = 3),
                           fetch(
-                            "https://artisans-and-co.onrender.com:5000/api/order/".concat(
+                            "https://artisans-and-co.onrender.com/api/order/".concat(
                               u,
                               "/order-cart"
                             ),
@@ -46523,7 +46523,7 @@
                           console.log("here"),
                           (t.next = 4),
                           fetch(
-                            "https://artisans-and-co.onrender.com:5000/api/user/login",
+                            "https://artisans-and-co.onrender.com/api/user/login",
                             {
                               method: "POST",
                               mode: "cors",
@@ -46657,7 +46657,7 @@
                             console.log(JSON.stringify(a)),
                             (e.next = 5),
                             fetch(
-                              "https://artisans-and-co.onrender.com:5000/api/user/register",
+                              "https://artisans-and-co.onrender.com/api/user/register",
                               {
                                 method: "POST",
                                 mode: "cors",
@@ -47144,7 +47144,7 @@
                               (s = { socials: i, bio: l, artist_name: o }),
                               (e.next = 7),
                               fetch(
-                                "https://artisans-and-co.onrender.com:5000/api/artist/".concat(
+                                "https://artisans-and-co.onrender.com/api/artist/".concat(
                                   n.id,
                                   "/edit"
                                 ),
@@ -47172,7 +47172,7 @@
                             return (
                               (e.next = 15),
                               fetch(
-                                "https://artisans-and-co.onrender.com:5000/api/artist/".concat(
+                                "https://artisans-and-co.onrender.com/api/artist/".concat(
                                   n.id,
                                   "/setcoverpic"
                                 ),
@@ -47491,7 +47491,7 @@
                               (o = n),
                               (e.next = 3),
                               fetch(
-                                "https://artisans-and-co.onrender.com:5000/api/user/" +
+                                "https://artisans-and-co.onrender.com/api/user/" +
                                   t.id +
                                   "/editaddress",
                                 {
@@ -47747,7 +47747,7 @@
                           return (
                             (e.next = 17),
                             fetch(
-                              "https://artisans-and-co.onrender.com:5000/api/user/".concat(
+                              "https://artisans-and-co.onrender.com/api/user/".concat(
                                 n.id,
                                 "/edit"
                               ),
@@ -47770,7 +47770,7 @@
                           return (
                             (e.next = 25),
                             fetch(
-                              "https://artisans-and-co.onrender.com:5000/api/user/".concat(
+                              "https://artisans-and-co.onrender.com/api/user/".concat(
                                 n.id,
                                 "/setprofilepic"
                               ),
@@ -47976,7 +47976,7 @@
                           return (
                             (e.next = 2),
                             fetch(
-                              "https://artisans-and-co.onrender.com:5000/api/orders/artist",
+                              "https://artisans-and-co.onrender.com/api/orders/artist",
                               {
                                 method: "GET",
                                 mode: "cors",
@@ -48087,7 +48087,7 @@
           h = (0, a.useParams)().id;
         console.log(h),
           (0, e.useEffect)(function () {
-            fetch("https://artisans-and-co.onrender.com:5000/api/artist/" + h, {
+            fetch("https://artisans-and-co.onrender.com/api/artist/" + h, {
               method: "GET",
               mode: "cors",
               headers: {
@@ -48350,7 +48350,7 @@
                             return (
                               (e.next = 2),
                               fetch(
-                                "https://artisans-and-co.onrender.com:5000/api/orders/artist",
+                                "https://artisans-and-co.onrender.com/api/orders/artist",
                                 {
                                   method: "GET",
                                   mode: "cors",
@@ -48457,18 +48457,15 @@
             l = (0, a.useParams)().id;
           console.log(l),
             (0, e.useEffect)(function () {
-              fetch(
-                "https://artisans-and-co.onrender.com:5000/api/customer/" + l,
-                {
-                  method: "GET",
-                  mode: "cors",
-                  headers: {
-                    "Access-Control-Allow-Credentials": "true",
-                    "Content-Type": "application/json",
-                  },
-                  credentials: "include",
-                }
-              )
+              fetch("https://artisans-and-co.onrender.com/api/customer/" + l, {
+                method: "GET",
+                mode: "cors",
+                headers: {
+                  "Access-Control-Allow-Credentials": "true",
+                  "Content-Type": "application/json",
+                },
+                credentials: "include",
+              })
                 .then(function (e) {
                   return e.json();
                 })
@@ -49104,7 +49101,7 @@
                           })),
                           (e.next = 4),
                           fetch(
-                            "https://artisans-and-co.onrender.com:5000/api/product/".concat(
+                            "https://artisans-and-co.onrender.com/api/product/".concat(
                               d,
                               "/add"
                             ),
@@ -49149,7 +49146,7 @@
                         return (
                           (e.next = 2),
                           fetch(
-                            "https://artisans-and-co.onrender.com:5000/api/product/".concat(
+                            "https://artisans-and-co.onrender.com/api/product/".concat(
                               t,
                               "/addmainimage"
                             ),
@@ -49200,7 +49197,7 @@
                         return (
                           (e.next = 6),
                           fetch(
-                            "https://artisans-and-co.onrender.com:5000/api/product/".concat(
+                            "https://artisans-and-co.onrender.com/api/product/".concat(
                               t,
                               "/addgiftimage"
                             ),
@@ -49394,7 +49391,7 @@
                           return (
                             (e.next = 2),
                             fetch(
-                              "https://artisans-and-co.onrender.com:5000/api/artist/".concat(
+                              "https://artisans-and-co.onrender.com/api/artist/".concat(
                                 d,
                                 "/artistcard"
                               ),
@@ -49554,7 +49551,7 @@
                             return (
                               (e.next = 2),
                               fetch(
-                                "https://artisans-and-co.onrender.com:5000/api/user/",
+                                "https://artisans-and-co.onrender.com/api/user/",
                                 {
                                   method: "GET",
                                   mode: "cors",
@@ -49614,7 +49611,7 @@
                                                   return (
                                                     (e.next = 2),
                                                     fetch(
-                                                      "https://artisans-and-co.onrender.com:5000/api/user/" +
+                                                      "https://artisans-and-co.onrender.com/api/user/" +
                                                         u +
                                                         "/markuserartist",
                                                       {
@@ -49695,7 +49692,7 @@
                                                   return (
                                                     (e.next = 2),
                                                     fetch(
-                                                      "https://artisans-and-co.onrender.com:5000/api/user/" +
+                                                      "https://artisans-and-co.onrender.com/api/user/" +
                                                         u +
                                                         "/markusercustomer",
                                                       {
@@ -49835,7 +49832,7 @@
                             console.log(i),
                             (e.next = 10),
                             fetch(
-                              "https://artisans-and-co.onrender.com:5000/api/product/".concat(
+                              "https://artisans-and-co.onrender.com/api/product/".concat(
                                 o,
                                 "/addvarients"
                               ),
@@ -50029,7 +50026,7 @@
                           return (
                             (e.next = 2),
                             fetch(
-                              "https://artisans-and-co.onrender.com:5000/api/customer/",
+                              "https://artisans-and-co.onrender.com/api/customer/",
                               {
                                 method: "GET",
                                 mode: "cors",
@@ -50124,7 +50121,7 @@
                             (r.contact_details = { phoneNumber: l, email: d }),
                             (e.next = 6),
                             fetch(
-                              "https://artisans-and-co.onrender.com:5000/api/order/".concat(
+                              "https://artisans-and-co.onrender.com/api/order/".concat(
                                 p,
                                 "/confirm-order-group"
                               ),
@@ -50177,7 +50174,7 @@
                             t.preventDefault(),
                             (e.next = 3),
                             fetch(
-                              "https://artisans-and-co.onrender.com:5000/api/order/".concat(
+                              "https://artisans-and-co.onrender.com/api/order/".concat(
                                 p,
                                 "/delete-order-group"
                               ),
@@ -50499,7 +50496,7 @@
                             return (
                               (e.next = 2),
                               fetch(
-                                "https://artisans-and-co.onrender.com:5000/api/search/".concat(
+                                "https://artisans-and-co.onrender.com/api/search/".concat(
                                   t,
                                   "?"
                                 ) + new URLSearchParams({ query: l }),
@@ -50548,7 +50545,7 @@
                           return (
                             (e.next = 2),
                             fetch(
-                              "https://artisans-and-co.onrender.com:5000/api/search/".concat(
+                              "https://artisans-and-co.onrender.com/api/search/".concat(
                                 t,
                                 "?"
                               ) + new URLSearchParams({ query: l }),
@@ -50595,7 +50592,7 @@
                           return (
                             (e.next = 2),
                             fetch(
-                              "https://artisans-and-co.onrender.com:5000/api/search/".concat(
+                              "https://artisans-and-co.onrender.com/api/search/".concat(
                                 t,
                                 "/plth?"
                               ) + new URLSearchParams({ query: l }),
@@ -50642,7 +50639,7 @@
                           return (
                             (e.next = 2),
                             fetch(
-                              "https://artisans-and-co.onrender.com:5000/api/search/".concat(
+                              "https://artisans-and-co.onrender.com/api/search/".concat(
                                 t,
                                 "/phtl?"
                               ) + new URLSearchParams({ query: l }),
@@ -50707,7 +50704,7 @@
                           return (
                             (e.next = 6),
                             fetch(
-                              "https://artisans-and-co.onrender.com:5000/api/search/".concat(
+                              "https://artisans-and-co.onrender.com/api/search/".concat(
                                 n - 1,
                                 "?"
                               ) + new URLSearchParams({ query: l }),
@@ -50731,7 +50728,7 @@
                           return (
                             (e.next = 14),
                             fetch(
-                              "https://artisans-and-co.onrender.com:5000/api/search/".concat(
+                              "https://artisans-and-co.onrender.com/api/search/".concat(
                                 n + 1,
                                 "?"
                               ) + new URLSearchParams({ query: l }),
@@ -50947,7 +50944,7 @@
                             t.preventDefault(),
                             (e.next = 3),
                             fetch(
-                              "https://artisans-and-co.onrender.com:5000/api/product/".concat(
+                              "https://artisans-and-co.onrender.com/api/product/".concat(
                                 o,
                                 "/addcategories"
                               ),
@@ -51077,7 +51074,7 @@
                                       return (
                                         (e.next = 6),
                                         fetch(
-                                          "https://artisans-and-co.onrender.com:5000/api/category?" +
+                                          "https://artisans-and-co.onrender.com/api/category?" +
                                             new URLSearchParams({
                                               category: o,
                                             }),
@@ -51154,7 +51151,7 @@
                           return (
                             (e.next = 4),
                             fetch(
-                              "https://artisans-and-co.onrender.com:5000/api/artist/".concat(
+                              "https://artisans-and-co.onrender.com/api/artist/".concat(
                                 n.a_id
                               ),
                               {
@@ -51215,7 +51212,7 @@
                                       return (
                                         (e.next = 2),
                                         fetch(
-                                          "https://artisans-and-co.onrender.com:5000/api/order/".concat(
+                                          "https://artisans-and-co.onrender.com/api/order/".concat(
                                             n._id,
                                             "/markorderdispatched"
                                           ),
@@ -51269,7 +51266,7 @@
                                       return (
                                         (e.next = 2),
                                         fetch(
-                                          "https://artisans-and-co.onrender.com:5000/api/order/".concat(
+                                          "https://artisans-and-co.onrender.com/api/order/".concat(
                                             n._id,
                                             "/markorderdelivered"
                                           ),
@@ -51372,7 +51369,7 @@
                             return (
                               (e.next = 4),
                               fetch(
-                                "https://artisans-and-co.onrender.com:5000/api/product/".concat(
+                                "https://artisans-and-co.onrender.com/api/product/".concat(
                                   n.order_item.product_id
                                 ),
                                 {
@@ -51427,7 +51424,7 @@
                           return (
                             (e.next = 2),
                             fetch(
-                              "https://artisans-and-co.onrender.com:5000/api/product/varient/".concat(
+                              "https://artisans-and-co.onrender.com/api/product/varient/".concat(
                                 n.order_item.varient_id
                               ),
                               {
@@ -51587,7 +51584,7 @@
                           return (
                             (e.next = 2),
                             fetch(
-                              "https://artisans-and-co.onrender.com:5000/api/order/".concat(
+                              "https://artisans-and-co.onrender.com/api/order/".concat(
                                 t
                               ),
                               {
@@ -51710,7 +51707,7 @@
           return (
             (0, e.useEffect)(function () {
               (document.body.style = "background: #f1faee;"),
-                fetch("https://artisans-and-co.onrender.com:5000/api/user/", {
+                fetch("https://artisans-and-co.onrender.com/api/user/", {
                   method: "GET",
                   mode: "cors",
                   headers: {
