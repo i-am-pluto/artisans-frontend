@@ -4,7 +4,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Routes,
   Redirect,
 } from "react-router-dom";
 
@@ -15,7 +14,6 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import Header from "./header/Header";
 import Footer from "./footer/Footer";
 import Home from "./home/Home";
-import WelcomeBody from "./welcome/WelcomeBody";
 import SellerWelcome from "./Seller/SellerWelcome";
 import ProductPage from "./productPage/ProductPage";
 import Profile from "./profile/Profile";
@@ -33,11 +31,12 @@ import SearchResult from "./searchResult/SearchResult";
 import AddCategories from "./Seller/AddCategories";
 import OrderStatus from "./orders/OrderStatus";
 
+
 function App() {
   let [user, setUser] = useState({});
   useEffect(() => {
     document.body.style = "background: #f1faee;";
-    fetch("http://localhost:5000/api/user/", {
+    fetch("https://artisans-and-co.onrender.com", {
       method: "GET",
       mode: "cors",
       headers: {

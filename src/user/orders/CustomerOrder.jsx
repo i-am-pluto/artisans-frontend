@@ -20,7 +20,7 @@ function CustomerOrders() {
 
   useEffect(() => {
     const getOrders = async () => {
-      const response = await fetch("http://localhost:5000/api/orders/artist", {
+      const response = await fetch("https://artisans-and-co.onrender.com", {
         method: "GET",
         mode: "cors",
         credentials: "include",

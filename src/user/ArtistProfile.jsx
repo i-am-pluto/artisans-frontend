@@ -6,6 +6,7 @@ import EditGeneral from "./EditGeneral";
 import { EditProfile } from "./EditProfile";
 import ArtistOrders from "./orders/ArtistOrders";
 import Orders from "./orders/ArtistOrders";
+
 function ArtistProfile({ user }) {
   let [active, setActive] = useState(["active", "", "", "", ""]);
   let [active_show, setActive_show] = useState(["active show", "", "", "", ""]);
@@ -13,7 +14,7 @@ function ArtistProfile({ user }) {
   const { id } = useParams();
   console.log(id);
   useEffect(() => {
-    fetch("http://localhost:5000/api/artist/" + id, {
+    fetch("https://artisans-and-co.onrender.com" + "/api/artist/" + id, {
       method: "GET",
       mode: "cors",
       headers: {

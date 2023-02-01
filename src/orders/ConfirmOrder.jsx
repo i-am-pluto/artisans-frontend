@@ -20,15 +20,18 @@ const ConfirmOrder = () => {
   const { id } = useParams();
 
   const fetchCustomer = async () => {
-    const response = await fetch(`http://localhost:5000/api/customer/`, {
-      method: "GET",
-      mode: "cors",
-      headers: {
-        "Access-Control-Allow-Credentials": "true",
-        "Content-Type": "application/json",
-      },
-      credentials: "include",
-    });
+    const response = await fetch(
+      `https://artisans-and-co.onrender.com/api/customer/`,
+      {
+        method: "GET",
+        mode: "cors",
+        headers: {
+          "Access-Control-Allow-Credentials": "true",
+          "Content-Type": "application/json",
+        },
+        credentials: "include",
+      }
+    );
 
     const data = await response.json();
     if (!data.success) {
@@ -43,7 +46,7 @@ const ConfirmOrder = () => {
 
   const fetchOrder = async () => {
     const response = await fetch(
-      `http://localhost:5000/api/order/${id}/group`,
+      `https://artisans-and-co.onrender.com/api/order/${id}/group`,
       {
         method: "GET",
         mode: "cors",
@@ -117,7 +120,7 @@ const ConfirmOrder = () => {
     temp.contact_details = { phoneNumber, email };
 
     const response = await fetch(
-      `http://localhost:5000/api/order/${id}/confirm-order-group`,
+      `https://artisans-and-co.onrender.com/api/order/${id}/confirm-order-group`,
       {
         method: "POST",
         mode: "cors",
@@ -143,7 +146,7 @@ const ConfirmOrder = () => {
   const handleCancel = async (e) => {
     e.preventDefault();
     const response = await fetch(
-      `http://localhost:5000/api/order/${id}/delete-order-group`,
+      `https://artisans-and-co.onrender.com/api/order/${id}/delete-order-group`,
       {
         method: "POST",
         mode: "cors",

@@ -14,7 +14,7 @@ const SearchResult = () => {
   useEffect(() => {
     const setSearchResults = async () => {
       const response = await fetch(
-        `http://localhost:5000/api/search/${pgeno}?` +
+        `https://artisans-and-co.onrender.com/api/search/${pgeno}?` +
           new URLSearchParams({
             query: query,
           }),
@@ -40,7 +40,7 @@ const SearchResult = () => {
   }, []);
   const getProductsByRelevancy = async () => {
     const response = await fetch(
-      `http://localhost:5000/api/search/${pgeno}?` +
+      `https://artisans-and-co.onrender.com/api/search/${pgeno}?` +
         new URLSearchParams({
           query: query,
         }),
@@ -64,7 +64,7 @@ const SearchResult = () => {
   };
   const getProductListPLtoH = async () => {
     const response = await fetch(
-      `http://localhost:5000/api/search/${pgeno}/plth?` +
+      `https://artisans-and-co.onrender.com/api/search/${pgeno}/plth?` +
         new URLSearchParams({
           query: query,
         }),
@@ -88,7 +88,7 @@ const SearchResult = () => {
   };
   const getProductListPHtoL = async () => {
     const response = await fetch(
-      `http://localhost:5000/api/search/${pgeno}/phtl?` +
+      `https://artisans-and-co.onrender.com/api/search/${pgeno}/phtl?` +
         new URLSearchParams({
           query: query,
         }),
@@ -135,7 +135,7 @@ const SearchResult = () => {
         setBefore(pgeno);
       } else {
         const response = await fetch(
-          `http://localhost:5000/api/search/${pg - 1}?` +
+          `https://artisans-and-co.onrender.com/api/search/${pg - 1}?` +
             new URLSearchParams({
               query: query,
             }),
@@ -155,7 +155,7 @@ const SearchResult = () => {
       }
 
       const response2 = await fetch(
-        `http://localhost:5000/api/search/${pg + 1}?` +
+        `https://artisans-and-co.onrender.com/api/search/${pg + 1}?` +
           new URLSearchParams({
             query: query,
           }),

@@ -4,13 +4,14 @@ import "./ArtistProfile.css";
 import EditGeneral from "./EditGeneral";
 import { EditProfile } from "./EditProfile";
 import CustomerOrders from "./orders/CustomerOrder";
+
 const CustomerProfile = ({ user }) => {
   const [customer, setCustomer] = useState();
   const { id } = useParams();
   console.log(id);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/customer/" + id, {
+    fetch("https://artisans-and-co.onrender.com" + "/api/customer/" + id, {
       method: "GET",
       mode: "cors",
       headers: {

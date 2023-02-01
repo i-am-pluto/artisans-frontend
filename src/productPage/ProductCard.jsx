@@ -51,16 +51,19 @@ function ProductCard({ product, varients }) {
       varient: varients[Number(varientSelect.value)],
     };
 
-    const response = await fetch(`http://localhost:5000/api/order/create`, {
-      method: "POST",
-      mode: "cors",
-      headers: {
-        "Access-Control-Allow-Credentials": "true",
-        "Content-Type": "application/json",
-      },
-      credentials: "include",
-      body: JSON.stringify(body),
-    });
+    const response = await fetch(
+      `https://artisans-and-co.onrender.com/api/order/create`,
+      {
+        method: "POST",
+        mode: "cors",
+        headers: {
+          "Access-Control-Allow-Credentials": "true",
+          "Content-Type": "application/json",
+        },
+        credentials: "include",
+        body: JSON.stringify(body),
+      }
+    );
 
     const data = await response.json();
 
@@ -94,16 +97,19 @@ function ProductCard({ product, varients }) {
       varient: varients[Number(varientSelect.value)],
     };
 
-    const response = await fetch(`http://localhost:5000/api/cart/add`, {
-      method: "POST",
-      mode: "cors",
-      headers: {
-        "Access-Control-Allow-Credentials": "true",
-        "Content-Type": "application/json",
-      },
-      credentials: "include",
-      body: JSON.stringify(body),
-    });
+    const response = await fetch(
+      `https://artisans-and-co.onrender.com/api/cart/add`,
+      {
+        method: "POST",
+        mode: "cors",
+        headers: {
+          "Access-Control-Allow-Credentials": "true",
+          "Content-Type": "application/json",
+        },
+        credentials: "include",
+        body: JSON.stringify(body),
+      }
+    );
 
     const data = await response.json();
 

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Login.css";
 import { useHistory } from "react-router-dom";
+
 function Login() {
   let navigate = useHistory();
   const Obj = {};
@@ -16,15 +17,18 @@ function Login() {
   const handleClick = async (e) => {
     e.preventDefault();
     console.log("here");
-    const response = await fetch("http://localhost:5000/api/user/login", {
-      method: "POST",
-      mode: "cors",
-      credentials: "include",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(Obj),
-    });
+    const response = await fetch(
+      "https://artisans-and-co.onrender.com" + "/api/user/login",
+      {
+        method: "POST",
+        mode: "cors",
+        credentials: "include",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(Obj),
+      }
+    );
     const data = await response.json();
     if (data.success) {
       window.location.href = "/home";

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-// require("dot-env").config();
 
 function Register() {
   let name = {};
@@ -26,15 +25,18 @@ function Register() {
       customer,
     };
     console.log(JSON.stringify(obj));
-    const respone = await fetch("http://localhost:5000/api/user/register", {
-      method: "POST",
-      mode: "cors",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      credentials: "include",
-      body: JSON.stringify(obj),
-    });
+    const respone = await fetch(
+      "https://artisans-and-co.onrender.com" + "/api/user/register",
+      {
+        method: "POST",
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        credentials: "include",
+        body: JSON.stringify(obj),
+      }
+    );
 
     respone.json().then((data) => {
       if (data.success) {

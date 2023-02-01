@@ -12,7 +12,7 @@ function CategoryContainer() {
 
   const getTopArtists = async () => {
     const response = await fetch(
-      "http://localhost:5000/api/artist/bestselling",
+      "https://artisans-and-co.onrender.com/api/artist/bestselling",
       {
         method: "GET",
         mode: "cors",

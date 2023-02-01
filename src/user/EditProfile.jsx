@@ -38,7 +38,8 @@ export const EditProfile = ({ profile_user }) => {
     }
 
     const response = await fetch(
-      `http://localhost:5000/api/user/${profile_user.id}/edit`,
+      "https://artisans-and-co.onrender.com" +
+        `/api/user/${profile_user.id}/edit`,
       {
         method: "PUT",
         mode: "cors",
@@ -56,7 +57,8 @@ export const EditProfile = ({ profile_user }) => {
     // console.log(pfp);
     if (pfp) {
       const responsePfp = await fetch(
-        `http://localhost:5000/api/user/${profile_user.id}/setprofilepic`,
+        "https://artisans-and-co.onrender.com" +
+          `/api/user/${profile_user.id}/setprofilepic`,
         {
           method: "POST",
           mode: "cors",

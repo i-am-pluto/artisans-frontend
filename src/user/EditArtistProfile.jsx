@@ -50,7 +50,8 @@ const EditArtistProfile = ({ profile_user }) => {
       artist_name: artistName,
     };
     const response = await fetch(
-      `http://localhost:5000/api/artist/${profile_user.id}/edit`,
+      "https://artisans-and-co.onrender.com" +
+        `/api/artist/${profile_user.id}/edit`,
       {
         method: "PUT",
         mode: "cors",
@@ -68,7 +69,8 @@ const EditArtistProfile = ({ profile_user }) => {
 
     if (cover) {
       const responsePfp = await fetch(
-        `http://localhost:5000/api/artist/${profile_user.id}/setcoverpic`,
+        "https://artisans-and-co.onrender.com" +
+          `/api/artist/${profile_user.id}/setcoverpic`,
         {
           method: "PUT",
           mode: "cors",

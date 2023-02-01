@@ -10,14 +10,17 @@ function Role() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("http://localhost:5000/api/user/", {
-        method: "GET",
-        mode: "cors",
-        credentials: "include",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const response = await fetch(
+        "https://artisans-and-co.onrender.com" + "/api/user/",
+        {
+          method: "GET",
+          mode: "cors",
+          credentials: "include",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       if (response) {
         const body = await response.json();
@@ -53,7 +56,10 @@ function Role() {
                 className="btn btn-success"
                 onClick={async (e) => {
                   const response = await fetch(
-                    "http://localhost:5000/api/user/" + id + "/markuserartist",
+                    "https://artisans-and-co.onrender.com" +
+                      "/api/user/" +
+                      id +
+                      "/markuserartist",
                     {
                       method: "GET",
                       mode: "cors",
@@ -99,7 +105,8 @@ function Role() {
                 className="btn btn-success"
                 onClick={async (e) => {
                   const response = await fetch(
-                    "http://localhost:5000/api/user/" +
+                    "https://artisans-and-co.onrender.com" +
+                      "/api/user/" +
                       id +
                       "/markusercustomer",
                     {

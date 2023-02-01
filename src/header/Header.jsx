@@ -35,15 +35,18 @@ function Header({ user }) {
 
   useEffect(() => {
     const fetchCart = async () => {
-      const response = await fetch("http://localhost:5000/api/cart/", {
-        method: "GET",
-        mode: "cors",
-        headers: {
-          "Access-Control-Allow-Credentials": "true",
-          "Content-Type": "application/json",
-        },
-        credentials: "include",
-      });
+      const response = await fetch(
+        "https://artisans-and-co.onrender.com/api/cart/",
+        {
+          method: "GET",
+          mode: "cors",
+          headers: {
+            "Access-Control-Allow-Credentials": "true",
+            "Content-Type": "application/json",
+          },
+          credentials: "include",
+        }
+      );
       const data = await response.json();
       if (data._id) {
         setCart({
@@ -100,7 +103,9 @@ function Header({ user }) {
           className="row"
           onClick={async (e) => {
             const response = await fetch(
-              "http://localhost:5000/api/user/" + user._id + "/markuserartist",
+              "https://artisans-and-co.onrender.com/api/user/" +
+                user._id +
+                "/markuserartist",
               {
                 method: "GET",
                 mode: "cors",
@@ -142,7 +147,9 @@ function Header({ user }) {
           className="row"
           onClick={async (e) => {
             const response = await fetch(
-              "http://localhost:5000/api/user/" + user._id + "/markuserartist",
+              "https://artisans-and-co.onrender.com/api/user/" +
+                user._id +
+                "/markuserartist",
               {
                 method: "GET",
                 mode: "cors",
@@ -177,7 +184,7 @@ function Header({ user }) {
           className="row"
           onClick={async (e) => {
             const response = await fetch(
-              "http://localhost:5000/api/user/logout",
+              "https://artisans-and-co.onrender.com/api/user/logout",
               {
                 method: "GET",
                 mode: "cors",
