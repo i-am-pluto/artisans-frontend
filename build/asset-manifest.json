@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a20260fa.css",
+    "main.js": "/static/js/main.663b03fd.js",
+    "static/js/787.a3f80bad.chunk.js": "/static/js/787.a3f80bad.chunk.js",
+    "static/media/seller.jpg": "/static/media/seller.2f3948d92bc223e65202.jpg",
+    "static/media/shopper.jpg": "/static/media/shopper.c93a294a42a0d700e9ad.jpg",
+    "static/media/image.png": "/static/media/image.bbe363121df0e5a87f5c.png",
+    "static/media/2560px-Flag_of_the_United_States.svg.png": "/static/media/2560px-Flag_of_the_United_States.svg.98032cf6f2ac6cae51f0.png",
+    "static/media/1350px-Flag_of_India.svg.png": "/static/media/1350px-Flag_of_India.svg.033aa57ceafad2f55cc5.png",
+    "static/media/WorldOnpencil.png": "/static/media/WorldOnpencil.e0f48a93e8f02ba23765.png",
+    "static/media/uploadImage.png": "/static/media/uploadImage.6782749a2e5fa5b302da.png",
+    "index.html": "/index.html",
+    "main.a20260fa.css.map": "/static/css/main.a20260fa.css.map",
+    "main.663b03fd.js.map": "/static/js/main.663b03fd.js.map",
+    "787.a3f80bad.chunk.js.map": "/static/js/787.a3f80bad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a20260fa.css",
+    "static/js/main.663b03fd.js"
+  ]
+}
