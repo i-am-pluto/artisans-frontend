@@ -53,9 +53,9 @@
 .category_item {
   width: 120px;
   height: 120px;
-  background: grey;
+  /* background: grey; */
   border-radius: 60px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   position: relative;
   margin-top: -60px;
   overflow: hidden;

@@ -293,7 +293,7 @@ function Header({ user }) {
               style={{ textAlign: "center" }}
               href="/"
             >
-              World On Pencil
+              ODOP E-Store J&K
             </a>
           </div>
           <div className="flexbox_item nav-item"></div>

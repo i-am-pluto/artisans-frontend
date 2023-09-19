@@ -2,7 +2,12 @@ import React from "react";
 
 function InformationTable({ informationTable }) {
   let Table = [];
-  console.log(informationTable);
+  informationTable = {
+    material: "Wool and Cotton",
+    color: "Redish Brown",
+    size: "5 x 5 ft",
+    weight: "2kg (approx)",
+  }
   for (var i in informationTable) {
     Table.push([i, informationTable[i]]);
   }

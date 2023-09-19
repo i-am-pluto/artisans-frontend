@@ -61,10 +61,10 @@ function Home({ user }) {
       await r3.json(),
       await r4.json(),
     ];
-    setHomeSlider(data[0]);
-    setMostSelling(data[1]);
-    setNewCollection(data[2]);
-    setMostPopular(data[3]);
+    setHomeSlider(data[0].map((el) => { return { el, main_image_url: '' } }));
+    setMostSelling(data[1].map((el) => { return { el, main_image_url: '' } }));
+    setNewCollection(data[2].map((el) => { return { el, main_image_url: '' } }));
+    setMostPopular(data[3].map((el) => { return { el, main_image_url: '' } }));
   };
 
   useEffect(() => {
@@ -82,7 +82,7 @@ function Home({ user }) {
             className="container mb-5 text-center"
             style={{ marginTop: "-40px" }}
           >
-            Welcome to Artisans & Co., your destination for beautifully
+            Welcome to ODOP E-Store J&K, your destination for beautifully
             handcrafted gifts that are made with love and passion. Our featured
             products are some of our most popular and unique items, each one
             created by skilled artisans who put their heart and soul into every
@@ -92,7 +92,7 @@ function Home({ user }) {
         <div className="border">
           <One products={mostSelling} />
           <div className="container mb-5 text-center" style={{}}>
-            Welcome to Artisans & Co., where we specialize in creating
+            Welcome to ODOP E-Store J&K, where we specialize in creating
             beautifully handcrafted gifts for every occasion. Our best selling
             products are perfect for showing your loved ones just how much you
             care.
@@ -101,7 +101,7 @@ function Home({ user }) {
         <div className="border">
           <Third products={newCollection} />
           <div className="container mb-5 text-center" style={{}}>
-            Welcome to Artisans & Co., where we pride ourselves on offering
+            Welcome to ODOP E-Store J&K, where we pride ourselves on offering
             beautifully handcrafted gifts that are made with love and passion.
             We are excited to announce the arrival of our latest collection,
             featuring a range of unique and stylish items that are sure to

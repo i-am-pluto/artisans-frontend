@@ -20,21 +20,21 @@ function CustomerReviews({ product_id }) {
         credentials: "include",
       }
     );
-    const data = await response.json();
-    console.log(data);
-    if (!data.success) {
-      alert("Couldnt load reviews");
+    // const data = await response.json();
+    // console.log(data);
+    // if (!data.success) {
+    //   alert("Couldnt load reviews");
 
-      return;
-    }
-    console.log(data.reviews);
-    setComments(data.reviews);
+    //   return;
+    // }
+    // console.log(data.reviews);
+    // setComments(data.reviews);
 
-    if (data.reviews.length < 5) {
-      setDisable({ disabled: "..." });
-    } else {
-      setDisable("");
-    }
+    // if (data.reviews.length < 5) {
+    //   setDisable({ disabled: "..." });
+    // } else {
+    //   setDisable("");
+    // }
   };
   useEffect(() => {
     getProductReviews();
@@ -44,28 +44,28 @@ function CustomerReviews({ product_id }) {
     if (e.keyCode === 13) {
       const comment = e.target.value;
 
-      const response = await fetch(
-        `https://artisans-and-co.onrender.com/api/reviews/${product_id}/add`,
-        {
-          method: "POST",
-          mode: "cors",
-          headers: {
-            "Access-Control-Allow-Credentials": "true",
-            "Content-Type": "application/json",
-          },
-          credentials: "include",
-          body: JSON.stringify({ comment }),
-        }
-      );
-      const data = await response.json();
+      // const response = await fetch(
+      //   `https://artisans-and-co.onrender.com/api/reviews/${product_id}/add`,
+      //   {
+      //     method: "POST",
+      //     mode: "cors",
+      //     headers: {
+      //       "Access-Control-Allow-Credentials": "true",
+      //       "Content-Type": "application/json",
+      //     },
+      //     credentials: "include",
+      //     body: JSON.stringify({ comment }),
+      //   }
+      // );
+      // const data = await response.json();
 
-      if (data.success === false) {
-        alert("Failed To add the review");
-        return;
-      }
+      // if (data.success === false) {
+      //   alert("Failed To add the review");
+      //   return;
+      // }
 
       e.target.value = "";
-      alert("The review was added to the product");
+      // alert("The review was added to the product");
       getProductReviews();
     }
   };

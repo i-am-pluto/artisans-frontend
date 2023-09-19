@@ -30,6 +30,7 @@ import ConfirmOrder from "./orders/ConfirmOrder";
 import SearchResult from "./searchResult/SearchResult";
 import AddCategories from "./Seller/AddCategories";
 import OrderStatus from "./orders/OrderStatus";
+import { Districts } from "./districts/Districts";
 
 function App() {
   let [user, setUser] = useState({});
@@ -106,9 +107,16 @@ function App() {
           <Route exact path="/order/:id">
             <OrderStatus />
           </Route>
+
+          <Route exact path="/districts">
+            <Districts />
+          </Route>
+
+
           <Route exact path="/">
             <Redirect to="/home" />
           </Route>
+
         </Switch>
       </Router>
       <Footer />

@@ -8,13 +8,29 @@ import ProductCustomize from "./ProductCustomize";
 import ProductImages from "./ProductImages";
 import "./ProductPage.css";
 function ProductPage() {
-  let [product, setProduct] = useState();
-  let [artist, setArtist] = useState();
+  let [product, setProduct] = useState({
+    artist: {
+      artist_id: 1,
+      artist_name: 'Srinagar'
+    },
+    product_name: 'Handwoven Pashmina Shawl',
+    description: 'Handwoven Pashmina Shawl with intricate embroidery and aari work on the border. The shawl is made of 100% pure pashmina wool and is handwoven by artisans in Kashmir. The shawl is 80 inches in length and 40 inches in width.',
+    main_image_url: 'https://www.indubindu.com/cdn/shop/products/s6-1_dea5a22e-138b-4def-a74c-c39182def394_1024x.jpg?v=1542683478',
+    gift_image_urls: ['https://www.indubindu.com/cdn/shop/products/s6-2_604c3345-dd84-4bdc-9726-012b78c64bc8_1024x.jpg?v=1542683481', 'https://www.indubindu.com/cdn/shop/products/s6-3_b038302e-22ca-4547-8565-4bb513955f82_1024x.jpg?v=1542683485'],
+    customization: '',
+    customization_optional: true,
+    informationTable: [],
+    long_description: '',
+  });
+  let [artist, setArtist] = useState({});
   let [reviews, setReviews] = useState([]);
   let isArtistToProduct = false;
   const { productId } = useParams();
 
-  const [varients, setVarients] = useState([]);
+  const [varients, setVarients] = useState([{
+    varient_name: 'Authentic',
+    varient_price: 1000,
+  }]);
 
   useEffect(() => {
     document.body.style = "background: #f1faee;";
@@ -33,7 +49,7 @@ function ProductPage() {
       );
 
       const data = await response.json();
-      setProduct(data);
+      // setProduct(data);
     };
 
     getProduct();
@@ -57,7 +73,7 @@ function ProductPage() {
         );
         data = await response.json();
       }
-      setArtist(data);
+      // setArtist(data);
     };
     const getVarients = async () => {
       const response = await fetch(
@@ -74,7 +90,7 @@ function ProductPage() {
       );
 
       const data = await response.json();
-      setVarients(data);
+      // setVarients(data);
     };
     if (product) {
       getArtistCard();

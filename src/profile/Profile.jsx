@@ -33,48 +33,48 @@ function Profile() {
     {
       productId: 2012030,
       name: "A",
-      // image:
-      // "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2021/05/13/16208974262086.jpg",
+      image:
+        "https://www.hlimg.com/images/stories/738X538/1_1544595190-6715e.jpg?w=800&dpr=1.0",
       artistName: "LR",
       price: 200,
     },
     {
       productId: 2012039,
       name: "A",
-      // image:
-      //   "https://qph.fs.quoracdn.net/main-qimg-fca749b950f305ddbf0a4cb2854b6ad1-pjlq",
+      image:
+        "https://www.hlimg.com/images/stories/738X538/1_1544595254-22e.jpg?w=800&dpr=1.0",
       artistName: "RR",
       price: 200,
     },
     {
       productId: 2012041,
       name: "Bb",
-      // image:
-      //   "https://thumb-lvlt.xhcdn.com/a/2nKm7fgwe2hlaWWPk1zisQ/002/255/315/526x298.4.webp",
+      image:
+        "https://www.hlimg.com/images/stories/738X538/1_1544595406-4437e.jpg?w=800&dpr=1.0",
       artistName: "SL",
       price: 200,
     },
     {
       productId: 2012046,
       name: "A",
-      // image:
-      //   "https://i1.sndcdn.com/artworks-PZOnPSbRx5SlcIfY-QpdgbA-t500x500.jpg",
+      image:
+        "https://www.hlimg.com/images/stories/738X538/1_1544595471-7553e.jpg?w=800&dpr=1.0",
       artistName: "LR",
       price: 200,
     },
     {
-      productId: 2012047,
+      productId: 2012039,
       name: "A",
-      // image:
-      //   "https://qph.fs.quoracdn.net/main-qimg-fca749b950f305ddbf0a4cb2854b6ad1-pjlq",
+      image:
+        "https://www.hlimg.com/images/stories/738X538/1_1544595254-22e.jpg?w=800&dpr=1.0",
       artistName: "RR",
       price: 200,
     },
     {
-      productId: 2012049,
+      productId: 2012046,
       name: "A",
-      // image:
-      //   "https://i1.sndcdn.com/artworks-PZOnPSbRx5SlcIfY-QpdgbA-t500x500.jpg",
+      image:
+        "https://www.hlimg.com/images/stories/738X538/1_1544595471-7553e.jpg?w=800&dpr=1.0",
       artistName: "LR",
       price: 200,
     },
@@ -151,7 +151,7 @@ function Profile() {
     <div style={{ marginTop: "60px" }}>
       <div className="cover-image">
         <img
-          src={profile_user.cover_url}
+          src={'https://www.nationsonline.org/gallery/India/Thiksey-Monastery-Ladakh.jpg'}
           alt=""
           srcset=""
           className="cover-image-pic"
@@ -159,7 +159,7 @@ function Profile() {
       </div>
       <div className="profile-pic">
         <img
-          src={profile_user.pfp_url}
+          src={'https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQTZIU8CcuN_P7uMp81gSICMoSbt3P9JV-rq4WLVrUS9Qq1OjUZ5uKx1wEIW_BmEiny8dU4EV8KIHQ9BzZHATjVHFrYv4QC'}
           alt=""
           srcset=""
           className="profile-pic-image"
@@ -168,7 +168,7 @@ function Profile() {
       <div className="container">
         <center>
           <h2>
-            <b>{profile_user.artist_name}</b>
+            <b>Jammu District</b>
           </h2>
           <button
             className="mb-3 btn btn-outline-dark"
@@ -177,7 +177,7 @@ function Profile() {
           >
             {buttonText}
           </button>
-          <h6>{profile_user.bio}</h6>
+          <h6>{'"Jammu Treasures: Unearth the Essence of Exquisite Products"'}</h6>
         </center>
         <hr />
         <div>
